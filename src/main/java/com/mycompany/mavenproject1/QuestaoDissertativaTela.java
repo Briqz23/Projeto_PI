@@ -30,163 +30,215 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
 
         jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        ProximaQuestaoTelaIncorretaBotao = new javax.swing.JLabel();
-        QuestaoAnteriorTelaErraBotao = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         QuestaoDissertativaRespostaTextArea = new javax.swing.JPanel();
-        jSeparator2 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
-        VerificarDissertativaBotao = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        EnunciadoQuestaoAlternativaTextArea = new javax.swing.JTextArea();
-        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 32767));
+        EnunciadoQuestaoDissertativa = new javax.swing.JTextArea();
+        VerificarDissertativaBotao = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
 
         jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(12, 12, 12));
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
-        jPanel3.setPreferredSize(new java.awt.Dimension(948, 189));
-        jPanel3.setLayout(null);
-
-        ProximaQuestaoTelaIncorretaBotao.setForeground(new java.awt.Color(255, 255, 255));
-        ProximaQuestaoTelaIncorretaBotao.setIcon(new javax.swing.ImageIcon("/home/brikz/Downloads/right-arrow.png")); // NOI18N
-        ProximaQuestaoTelaIncorretaBotao.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ProximaQuestaoTelaIncorretaBotaoMouseClicked(evt);
-            }
-        });
-        jPanel3.add(ProximaQuestaoTelaIncorretaBotao);
-        ProximaQuestaoTelaIncorretaBotao.setBounds(880, 70, 64, 64);
-
-        QuestaoAnteriorTelaErraBotao.setForeground(new java.awt.Color(255, 255, 255));
-        QuestaoAnteriorTelaErraBotao.setIcon(new javax.swing.ImageIcon("/home/brikz/NetBeansProjects/mavenproject1/src/main/java/com/mycompany/mavenproject1/Imagens/leftArrow.png")); // NOI18N
-        QuestaoAnteriorTelaErraBotao.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                QuestaoAnteriorTelaErraBotaoMouseClicked(evt);
-            }
-        });
-        jPanel3.add(QuestaoAnteriorTelaErraBotao);
-        QuestaoAnteriorTelaErraBotao.setBounds(10, 60, 64, 64);
-
-        jLabel5.setIcon(new javax.swing.ImageIcon("/home/brikz/NetBeansProjects/mavenproject1/src/main/java/com/mycompany/mavenproject1/Imagens/Teorica.png")); // NOI18N
-        jLabel5.setFocusable(false);
-        jLabel5.setMinimumSize(new java.awt.Dimension(0, 0));
-        jPanel3.add(jLabel5);
-        jLabel5.setBounds(5, 5, 940, 176);
-
-        QuestaoDissertativaRespostaTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        QuestaoDissertativaRespostaTextArea.setBackground(new java.awt.Color(12, 12, 12));
         QuestaoDissertativaRespostaTextArea.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
-        QuestaoDissertativaRespostaTextArea.setPreferredSize(new java.awt.Dimension(948, 459));
+        QuestaoDissertativaRespostaTextArea.setPreferredSize(new java.awt.Dimension(948, 698));
 
-        jSeparator2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
-
-        jLabel1.setFont(new java.awt.Font("Montserrat Thin", 1, 30)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Montserrat", 0, 30)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(245, 196, 83));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Escreva sua solução e verifique");
 
-        VerificarDissertativaBotao.setBackground(new java.awt.Color(85, 51, 141));
-        VerificarDissertativaBotao.setFont(new java.awt.Font("Montserrat SemiBold", 0, 20)); // NOI18N
-        VerificarDissertativaBotao.setForeground(new java.awt.Color(255, 255, 255));
-        VerificarDissertativaBotao.setText("VERIFICAR");
-        VerificarDissertativaBotao.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        VerificarDissertativaBotao.setPreferredSize(new java.awt.Dimension(183, 50));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("/home/brikz/NetBeansProjects/mavenproject1/src/main/java/com/mycompany/mavenproject1/Imagens/iconeAlerta.png")); // NOI18N
+        jScrollPane2.setBorder(null);
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Montserrat SemiBold", 0, 20)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(85, 51, 141));
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("drop databases;");
+        jTextArea1.setTabSize(9);
+        jTextArea1.setText("#Escreva sua solução aqui");
+        jTextArea1.setToolTipText("Escreva sua solução aqui");
+        jTextArea1.setBorder(null);
+        jTextArea1.setPreferredSize(new java.awt.Dimension(855, 303));
         jScrollPane2.setViewportView(jTextArea1);
         jTextArea1.setLineWrap(true);
+        jTextArea1.getAccessibleContext().setAccessibleName("");
+
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setMaximumSize(new java.awt.Dimension(761, 400));
+        jScrollPane1.setPreferredSize(new java.awt.Dimension(761, 125));
+
+        EnunciadoQuestaoDissertativa.setEditable(false);
+        EnunciadoQuestaoDissertativa.setBackground(new java.awt.Color(12, 12, 12));
+        EnunciadoQuestaoDissertativa.setColumns(20);
+        EnunciadoQuestaoDissertativa.setFont(new java.awt.Font("Montserrat", 1, 20)); // NOI18N
+        EnunciadoQuestaoDissertativa.setForeground(new java.awt.Color(255, 255, 255));
+        EnunciadoQuestaoDissertativa.setLineWrap(true);
+        EnunciadoQuestaoDissertativa.setRows(5);
+        EnunciadoQuestaoDissertativa.setBorder(null);
+        EnunciadoQuestaoDissertativa.setMaximumSize(new java.awt.Dimension(761, 400));
+        EnunciadoQuestaoDissertativa.setPreferredSize(new java.awt.Dimension(761, 76));
+        jScrollPane1.setViewportView(EnunciadoQuestaoDissertativa);
+        EnunciadoQuestaoDissertativa.setLineWrap(true);
+
+        VerificarDissertativaBotao.setBackground(new java.awt.Color(85, 51, 141));
+        VerificarDissertativaBotao.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 20)); // NOI18N
+        VerificarDissertativaBotao.setForeground(new java.awt.Color(255, 255, 255));
+        VerificarDissertativaBotao.setText("VERIFICAR");
+        VerificarDissertativaBotao.setBorder(null);
+        VerificarDissertativaBotao.setPreferredSize(new java.awt.Dimension(183, 50));
+        VerificarDissertativaBotao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerificarDissertativaBotaoActionPerformed(evt);
+            }
+        });
+
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\MenuIcon.png")); // NOI18N
+        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jPanel2.setBackground(new java.awt.Color(210, 210, 210));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 94, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 312, Short.MAX_VALUE)
+        );
+
+        jLabel5.setPreferredSize(new java.awt.Dimension(54, 54));
+
+        jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
+
+        jPanel3.setBackground(new java.awt.Color(153, 0, 255));
+        jPanel3.setPreferredSize(new java.awt.Dimension(938, 185));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Pratica-1.png.png")); // NOI18N
+        jLabel6.setPreferredSize(new java.awt.Dimension(950, 185));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 938, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        jTextField5.setEditable(false);
+        jTextField5.setBackground(new java.awt.Color(12, 12, 12));
+        jTextField5.setFont(new java.awt.Font("Montserrat", 1, 30)); // NOI18N
+        jTextField5.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField5.setText("0");
+        jTextField5.setBorder(null);
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setFont(new java.awt.Font("Montserrat", 1, 30)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("/10");
 
         javax.swing.GroupLayout QuestaoDissertativaRespostaTextAreaLayout = new javax.swing.GroupLayout(QuestaoDissertativaRespostaTextArea);
         QuestaoDissertativaRespostaTextArea.setLayout(QuestaoDissertativaRespostaTextAreaLayout);
         QuestaoDissertativaRespostaTextAreaLayout.setHorizontalGroup(
             QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(58, 58, 58)
-                .addComponent(VerificarDissertativaBotao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55))
-            .addComponent(jSeparator2)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 860, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addComponent(jSeparator1)
+                .addContainerGap())
+            .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(108, 108, 108)
+                .addComponent(VerificarDissertativaBotao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
+            .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
+                .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel2))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 849, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel17)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         QuestaoDissertativaRespostaTextAreaLayout.setVerticalGroup(
             QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel17)
+                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(15, 15, 15)
+                .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2))
+                .addGap(15, 15, 15)
+                .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(VerificarDissertativaBotao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(57, 57, 57))
-        );
-
-        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
-
-        EnunciadoQuestaoAlternativaTextArea.setBackground(new java.awt.Color(0, 0, 0));
-        EnunciadoQuestaoAlternativaTextArea.setColumns(20);
-        EnunciadoQuestaoAlternativaTextArea.setFont(new java.awt.Font("Montserrat SemiBold", 1, 20)); // NOI18N
-        EnunciadoQuestaoAlternativaTextArea.setForeground(new java.awt.Color(255, 255, 255));
-        EnunciadoQuestaoAlternativaTextArea.setRows(5);
-        EnunciadoQuestaoAlternativaTextArea.setText("aaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccffffffffffffffffffffffffffffffffffcccc");
-        EnunciadoQuestaoAlternativaTextArea.setMaximumSize(new java.awt.Dimension(1175, 29));
-        jScrollPane1.setViewportView(EnunciadoQuestaoAlternativaTextArea);
-        EnunciadoQuestaoAlternativaTextArea.setLineWrap(true);
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/mavenproject1/Imagens/MenuIcon.png"))); // NOI18N
-        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(VerificarDissertativaBotao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(jLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 886, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(17, 17, 17))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(29, 29, 29)))
-                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -194,46 +246,47 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(141, 141, 141)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(QuestaoDissertativaRespostaTextArea, javax.swing.GroupLayout.DEFAULT_SIZE, 954, Short.MAX_VALUE))
-                .addGap(151, 151, 151))
+                .addGap(140, 140, 140)
+                .addComponent(QuestaoDissertativaRespostaTextArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(152, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addGap(63, 63, 63)
                 .addComponent(QuestaoDissertativaRespostaTextArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ProximaQuestaoTelaIncorretaBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProximaQuestaoTelaIncorretaBotaoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ProximaQuestaoTelaIncorretaBotaoMouseClicked
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        setVisible(false);
+        new MenuPrincipalTela().setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void QuestaoAnteriorTelaErraBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_QuestaoAnteriorTelaErraBotaoMouseClicked
-        QuestaoAnteriorTelaErraBotao.setBackground(new Color(0, 0, 0, 0));
-    }//GEN-LAST:event_QuestaoAnteriorTelaErraBotaoMouseClicked
+    private void VerificarDissertativaBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerificarDissertativaBotaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VerificarDissertativaBotaoActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -271,23 +324,23 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea EnunciadoQuestaoAlternativaTextArea;
-    private javax.swing.JLabel ProximaQuestaoTelaIncorretaBotao;
-    private javax.swing.JLabel QuestaoAnteriorTelaErraBotao;
+    private javax.swing.JTextArea EnunciadoQuestaoDissertativa;
     private javax.swing.JPanel QuestaoDissertativaRespostaTextArea;
     private javax.swing.JButton VerificarDissertativaBotao;
-    private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField5;
     // End of variables declaration//GEN-END:variables
 }

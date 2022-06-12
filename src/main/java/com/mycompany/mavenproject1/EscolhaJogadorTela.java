@@ -40,7 +40,7 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        sairSelecaoUnidadeBotao = new javax.swing.JButton();
 
         jogarU2Botao1.setText("Jogar");
         jogarU2Botao1.addActionListener(new java.awt.event.ActionListener() {
@@ -106,9 +106,9 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
         unidade1EnterBotao2.setForeground(new java.awt.Color(255, 255, 255));
         unidade1EnterBotao2.setText("Selecione o Jogador");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Diogo\\Documents\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Silhueta.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Silhueta.png")); // NOI18N
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Diogo\\Documents\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Guerra.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Guerra.png")); // NOI18N
 
         jButton4.setBackground(new java.awt.Color(85, 51, 141));
         jButton4.setFont(new java.awt.Font("Montserrat ExtraBold", 0, 18)); // NOI18N
@@ -177,11 +177,11 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
                 .addContainerGap(125, Short.MAX_VALUE))
         );
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Diogo\\Documents\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
-        jButton2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
+        sairSelecaoUnidadeBotao.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
+        sairSelecaoUnidadeBotao.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        sairSelecaoUnidadeBotao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sairSelecaoUnidadeBotaoActionPerformed(evt);
             }
         });
 
@@ -198,19 +198,19 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
                             .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 968, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(25, 25, 25)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(132, Short.MAX_VALUE))
+                        .addComponent(sairSelecaoUnidadeBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(132, 132, 132))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
+                .addGap(17, 17, 17)
+                .addComponent(sairSelecaoUnidadeBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 542, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -243,13 +243,14 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        System.exit(0);
-    }//GEN-LAST:event_jButton2MouseClicked
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void sairSelecaoUnidadeBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairSelecaoUnidadeBotaoActionPerformed
+        setVisible(false);
+        new MenuPrincipalTela().setVisible(true);
+    }//GEN-LAST:event_sairSelecaoUnidadeBotaoActionPerformed
 
     /** 
      * @param args the command line arguments
@@ -289,7 +290,6 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBoxNomesJogadores;
     private javax.swing.JLabel jLabel1;
@@ -299,6 +299,7 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JButton jogarU2Botao1;
+    private javax.swing.JButton sairSelecaoUnidadeBotao;
     private javax.swing.JLabel unidade1EnterBotao1;
     private javax.swing.JLabel unidade1EnterBotao2;
     // End of variables declaration//GEN-END:variables

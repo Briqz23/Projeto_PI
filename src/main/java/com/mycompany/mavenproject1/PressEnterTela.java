@@ -59,11 +59,11 @@ public class PressEnterTela extends javax.swing.JFrame {
         jLabel3.setText("Aperte ENTER para começar");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Diogo\\Documents\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\LOGO_Resized.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\LOGO_Resized.png")); // NOI18N
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Diogo\\Documents\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Aparecido_inicial-1.png.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Aparecido_inicial-1.png.png")); // NOI18N
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Diogo\\Documents\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
         jButton2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -96,7 +96,7 @@ public class PressEnterTela extends javax.swing.JFrame {
                 .addContainerGap(291, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1216, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -108,9 +108,9 @@ public class PressEnterTela extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(30, 30, 30)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addGap(26, 26, 26)
                 .addComponent(jLabel4)
                 .addGap(55, 55, 55))
         );

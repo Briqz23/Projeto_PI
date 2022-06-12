@@ -409,7 +409,7 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
             .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        sairSelecaoUnidadeBotao.setIcon(new javax.swing.ImageIcon("C:\\Users\\Diogo\\Documents\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
+        sairSelecaoUnidadeBotao.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
         sairSelecaoUnidadeBotao.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         sairSelecaoUnidadeBotao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -437,11 +437,11 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
                 .addComponent(sairSelecaoUnidadeBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(66, Short.MAX_VALUE)
+                .addGap(63, 63, 63)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60))
+                .addGap(63, 63, 63))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

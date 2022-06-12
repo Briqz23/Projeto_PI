@@ -93,11 +93,11 @@
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="66" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                   <Component id="jTextField1" min="-2" pref="112" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -712,7 +712,7 @@
         <Component class="javax.swing.JButton" name="sairSelecaoUnidadeBotao">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Diogo\Documents\NetBeansProjects\ProjetoIntegradorS1\src\main\java\com\mycompany\mavenproject1\Imagens\closeIcon.png"/>
+              <Image iconType="2" name="C:\Users\danie\OneDrive - Col&#xe9;gio Santa Cruz\Documentos\NetBeansProjects\ProjetoIntegradorS1\src\main\java\com\mycompany\mavenproject1\Imagens\closeIcon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">

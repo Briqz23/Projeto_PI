@@ -28,51 +28,70 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
+        numUnidade = new javax.swing.JTextField();
+        unidade = new javax.swing.JLabel();
+        btnSairIcon = new javax.swing.JButton();
         documentacaoBotao = new javax.swing.JLabel();
         selecaoJogadorBotao = new javax.swing.JLabel();
         creditosBotao = new javax.swing.JLabel();
         selecaoUnidadeBotao = new javax.swing.JLabel();
         sairBotao = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         tutorialBotao = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBackground(new java.awt.Color(12, 12, 12));
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(12, 12, 12));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
-        jPanel1.setPreferredSize(new java.awt.Dimension(948, 697));
+        jPanel1.setPreferredSize(new java.awt.Dimension(948, 698));
         jPanel1.setLayout(null);
 
-        jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
-        jSeparator1.setMinimumSize(new java.awt.Dimension(944, 10));
-        jPanel1.add(jSeparator1);
-        jSeparator1.setBounds(5, 105, 940, 2);
-
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
-        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton1.setMaximumSize(new java.awt.Dimension(54, 54));
-        jButton1.setMinimumSize(new java.awt.Dimension(54, 54));
-        jButton1.setPreferredSize(new java.awt.Dimension(54, 54));
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
-            }
-        });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        numUnidade.setEditable(false);
+        numUnidade.setBackground(new java.awt.Color(255, 255, 255));
+        numUnidade.setFont(new java.awt.Font("Montserrat", 1, 40)); // NOI18N
+        numUnidade.setForeground(new java.awt.Color(85, 51, 141));
+        numUnidade.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        numUnidade.setBorder(null);
+        numUnidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                numUnidadeActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(30, 30, 54, 54);
+        jPanel1.add(numUnidade);
+        numUnidade.setBounds(880, 20, 50, 70);
+        numUnidade.getAccessibleContext().setAccessibleName("");
 
-        documentacaoBotao.setFont(new java.awt.Font("Montserrat Thin", 1, 36)); // NOI18N
+        unidade.setFont(new java.awt.Font("Montserrat", 1, 40)); // NOI18N
+        unidade.setForeground(new java.awt.Color(85, 51, 141));
+        unidade.setText("UNIDADE");
+        jPanel1.add(unidade);
+        unidade.setBounds(670, 20, 210, 70);
+
+        btnSairIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
+        btnSairIcon.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnSairIcon.setMaximumSize(new java.awt.Dimension(54, 54));
+        btnSairIcon.setMinimumSize(new java.awt.Dimension(54, 54));
+        btnSairIcon.setPreferredSize(new java.awt.Dimension(54, 54));
+        btnSairIcon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSairIconMouseClicked(evt);
+            }
+        });
+        btnSairIcon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSairIconActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSairIcon);
+        btnSairIcon.setBounds(30, 30, 54, 54);
+
+        documentacaoBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
         documentacaoBotao.setForeground(new java.awt.Color(255, 255, 255));
         documentacaoBotao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         documentacaoBotao.setText("Documentação");
@@ -85,9 +104,9 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
             }
         });
         jPanel1.add(documentacaoBotao);
-        documentacaoBotao.setBounds(49, 332, 840, 70);
+        documentacaoBotao.setBounds(50, 320, 840, 80);
 
-        selecaoJogadorBotao.setFont(new java.awt.Font("Montserrat Thin", 1, 36)); // NOI18N
+        selecaoJogadorBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
         selecaoJogadorBotao.setForeground(new java.awt.Color(255, 255, 255));
         selecaoJogadorBotao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         selecaoJogadorBotao.setText("Seleção de Jogador");
@@ -103,9 +122,9 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
             }
         });
         jPanel1.add(selecaoJogadorBotao);
-        selecaoJogadorBotao.setBounds(49, 262, 840, 70);
+        selecaoJogadorBotao.setBounds(50, 240, 840, 80);
 
-        creditosBotao.setFont(new java.awt.Font("Montserrat Thin", 1, 36)); // NOI18N
+        creditosBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
         creditosBotao.setForeground(new java.awt.Color(255, 255, 255));
         creditosBotao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         creditosBotao.setText("Créditos");
@@ -121,9 +140,9 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
             }
         });
         jPanel1.add(creditosBotao);
-        creditosBotao.setBounds(49, 472, 840, 70);
+        creditosBotao.setBounds(50, 480, 840, 80);
 
-        selecaoUnidadeBotao.setFont(new java.awt.Font("Montserrat Thin", 1, 36)); // NOI18N
+        selecaoUnidadeBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
         selecaoUnidadeBotao.setForeground(new java.awt.Color(255, 255, 255));
         selecaoUnidadeBotao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         selecaoUnidadeBotao.setText("Seleção de Unidades");
@@ -139,10 +158,10 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
             }
         });
         jPanel1.add(selecaoUnidadeBotao);
-        selecaoUnidadeBotao.setBounds(49, 192, 840, 70);
+        selecaoUnidadeBotao.setBounds(50, 160, 840, 80);
 
         sairBotao.setBackground(new java.awt.Color(0, 0, 0));
-        sairBotao.setFont(new java.awt.Font("Montserrat Thin", 1, 36)); // NOI18N
+        sairBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
         sairBotao.setForeground(new java.awt.Color(255, 255, 255));
         sairBotao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         sairBotao.setText("Sair do Jogo");
@@ -159,13 +178,9 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
             }
         });
         jPanel1.add(sairBotao);
-        sairBotao.setBounds(49, 542, 840, 70);
+        sairBotao.setBounds(50, 560, 840, 80);
 
-        jLabel2.setAlignmentY(0.0F);
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(4, 5, 950, 100);
-
-        tutorialBotao.setFont(new java.awt.Font("Montserrat Thin", 1, 36)); // NOI18N
+        tutorialBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
         tutorialBotao.setForeground(new java.awt.Color(255, 255, 255));
         tutorialBotao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         tutorialBotao.setText("Tutorial");
@@ -178,23 +193,39 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
             }
         });
         jPanel1.add(tutorialBotao);
-        tutorialBotao.setBounds(49, 402, 840, 70);
+        tutorialBotao.setBounds(50, 400, 840, 80);
+
+        jLabel2.setFont(new java.awt.Font("Montserrat", 1, 40)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("BD ACADEMY");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(110, 0, 300, 106);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\topo.png")); // NOI18N
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(570, -50, 470, 210);
+
+        jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
+        jSeparator1.setMinimumSize(new java.awt.Dimension(948, 20));
+        jSeparator1.setPreferredSize(new java.awt.Dimension(0, 5));
+        jPanel1.add(jSeparator1);
+        jSeparator1.setBounds(0, 0, 950, 110);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(145, 145, 145)
+                .addGap(140, 140, 140)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addContainerGap(152, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(63, 63, 63)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addGap(63, 63, 63))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -205,92 +236,92 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void selecaoUnidadeBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoUnidadeBotaoMouseClicked
+    private void btnSairIconActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairIconActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSairIconActionPerformed
+
+    private void btnSairIconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSairIconMouseClicked
         setVisible(false);
-        new EscolhaUnidadesTela().setVisible(true);
+        new PressEnterTela().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSairIconMouseClicked
 
-    }//GEN-LAST:event_selecaoUnidadeBotaoMouseClicked
+    private void sairBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sairBotaoMouseExited
+        sairBotao.setForeground(Color.white);
+    }//GEN-LAST:event_sairBotaoMouseExited
 
-    private void selecaoUnidadeBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoUnidadeBotaoMouseEntered
-        selecaoUnidadeBotao.setForeground(new Color(147,87,242));
-    }//GEN-LAST:event_selecaoUnidadeBotaoMouseEntered
-
-    private void selecaoUnidadeBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoUnidadeBotaoMouseExited
-        selecaoUnidadeBotao.setForeground(Color.white);
-    }//GEN-LAST:event_selecaoUnidadeBotaoMouseExited
-
-    private void selecaoJogadorBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoJogadorBotaoMouseClicked
-        setVisible(false);
-        new EscolhaJogadorTela().setVisible(true);
-    }//GEN-LAST:event_selecaoJogadorBotaoMouseClicked
-
-    private void selecaoJogadorBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoJogadorBotaoMouseEntered
-        selecaoJogadorBotao.setForeground(new Color(147,87,242));
-    }//GEN-LAST:event_selecaoJogadorBotaoMouseEntered
-
-    private void selecaoJogadorBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoJogadorBotaoMouseExited
-        selecaoJogadorBotao.setForeground(Color.white);
-    }//GEN-LAST:event_selecaoJogadorBotaoMouseExited
-
-    private void documentacaoBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_documentacaoBotaoMouseEntered
-        documentacaoBotao.setForeground(new Color(147,87,242));
-    }//GEN-LAST:event_documentacaoBotaoMouseEntered
-
-    private void documentacaoBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_documentacaoBotaoMouseExited
-        documentacaoBotao.setForeground(Color.white);
-    }//GEN-LAST:event_documentacaoBotaoMouseExited
-
-    private void tutorialBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tutorialBotaoMouseEntered
-        tutorialBotao.setForeground(new Color(147,87,242));
-    }//GEN-LAST:event_tutorialBotaoMouseEntered
-
-    private void tutorialBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tutorialBotaoMouseExited
-        tutorialBotao.setForeground(Color.white);
-    }//GEN-LAST:event_tutorialBotaoMouseExited
-
-    private void creditosBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creditosBotaoMouseClicked
-        setVisible(false);
-        new CreditosTela().setVisible(true);
-    }//GEN-LAST:event_creditosBotaoMouseClicked
-
-    private void creditosBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creditosBotaoMouseEntered
-        creditosBotao.setForeground(new Color(147,87,242));
-    }//GEN-LAST:event_creditosBotaoMouseEntered
-
-    private void creditosBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creditosBotaoMouseExited
-        creditosBotao.setForeground(Color.white);
-    }//GEN-LAST:event_creditosBotaoMouseExited
+    private void sairBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sairBotaoMouseEntered
+        sairBotao.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_sairBotaoMouseEntered
 
     private void sairBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sairBotaoMouseClicked
 
         System.exit(0);
     }//GEN-LAST:event_sairBotaoMouseClicked
 
-    private void sairBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sairBotaoMouseEntered
-        sairBotao.setForeground(new Color(147,87,242));
-    }//GEN-LAST:event_sairBotaoMouseEntered
+    private void tutorialBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tutorialBotaoMouseExited
+        tutorialBotao.setForeground(Color.white);
+    }//GEN-LAST:event_tutorialBotaoMouseExited
 
-    private void sairBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sairBotaoMouseExited
-        sairBotao.setForeground(Color.white);
-    }//GEN-LAST:event_sairBotaoMouseExited
+    private void tutorialBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tutorialBotaoMouseEntered
+        tutorialBotao.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_tutorialBotaoMouseEntered
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void documentacaoBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_documentacaoBotaoMouseExited
+        documentacaoBotao.setForeground(Color.white);
+    }//GEN-LAST:event_documentacaoBotaoMouseExited
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void documentacaoBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_documentacaoBotaoMouseEntered
+        documentacaoBotao.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_documentacaoBotaoMouseEntered
+
+    private void selecaoJogadorBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoJogadorBotaoMouseExited
+        selecaoJogadorBotao.setForeground(Color.white);
+    }//GEN-LAST:event_selecaoJogadorBotaoMouseExited
+
+    private void selecaoJogadorBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoJogadorBotaoMouseEntered
+        selecaoJogadorBotao.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_selecaoJogadorBotaoMouseEntered
+
+    private void selecaoJogadorBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoJogadorBotaoMouseClicked
         setVisible(false);
-        new PressEnterTela().setVisible(true);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseClicked
+        new EscolhaJogadorTela().setVisible(true);
+    }//GEN-LAST:event_selecaoJogadorBotaoMouseClicked
+
+    private void selecaoUnidadeBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoUnidadeBotaoMouseExited
+        selecaoUnidadeBotao.setForeground(Color.white);
+    }//GEN-LAST:event_selecaoUnidadeBotaoMouseExited
+
+    private void selecaoUnidadeBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoUnidadeBotaoMouseEntered
+        selecaoUnidadeBotao.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_selecaoUnidadeBotaoMouseEntered
+
+    private void selecaoUnidadeBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selecaoUnidadeBotaoMouseClicked
+        setVisible(false);
+        new EscolhaUnidadesTela().setVisible(true);
+    }//GEN-LAST:event_selecaoUnidadeBotaoMouseClicked
+
+    private void creditosBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creditosBotaoMouseExited
+        creditosBotao.setForeground(Color.white);
+    }//GEN-LAST:event_creditosBotaoMouseExited
+
+    private void creditosBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creditosBotaoMouseEntered
+        creditosBotao.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_creditosBotaoMouseEntered
+
+    private void creditosBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creditosBotaoMouseClicked
+        setVisible(false);
+        new CreditosTelaV2().setVisible(true);
+    }//GEN-LAST:event_creditosBotaoMouseClicked
+
+    private void numUnidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numUnidadeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_numUnidadeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -331,17 +362,20 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSairIcon;
     private javax.swing.JLabel creditosBotao;
     private javax.swing.JLabel documentacaoBotao;
-    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextField numUnidade;
     private javax.swing.JLabel sairBotao;
     private javax.swing.JLabel selecaoJogadorBotao;
     private javax.swing.JLabel selecaoUnidadeBotao;
     private javax.swing.JLabel tutorialBotao;
+    private javax.swing.JLabel unidade;
     // End of variables declaration//GEN-END:variables
 }
