@@ -31,7 +31,7 @@ public class QuestionarioCompletoTela extends javax.swing.JFrame {
         marcarQuestao = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jPanel8 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
+        teoricaPNG = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
@@ -84,22 +84,22 @@ public class QuestionarioCompletoTela extends javax.swing.JFrame {
         jPanel8.setBackground(new java.awt.Color(153, 0, 255));
         jPanel8.setPreferredSize(new java.awt.Dimension(938, 185));
 
-        jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Teorica-1.png.png")); // NOI18N
-        jLabel23.setMinimumSize(new java.awt.Dimension(950, 190));
-        jLabel23.setPreferredSize(new java.awt.Dimension(950, 185));
+        teoricaPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Teorica.png.png")); // NOI18N
+        teoricaPNG.setMinimumSize(new java.awt.Dimension(950, 190));
+        teoricaPNG.setPreferredSize(new java.awt.Dimension(950, 185));
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 938, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(teoricaPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 938, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 172, Short.MAX_VALUE)
+                .addComponent(teoricaPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 172, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -461,7 +461,6 @@ public class QuestionarioCompletoTela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -476,5 +475,6 @@ public class QuestionarioCompletoTela extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JButton marcarQuestao;
+    private javax.swing.JLabel teoricaPNG;
     // End of variables declaration//GEN-END:variables
 }

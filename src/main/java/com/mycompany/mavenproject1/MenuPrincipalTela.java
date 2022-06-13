@@ -30,7 +30,7 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         numUnidade = new javax.swing.JTextField();
         unidade = new javax.swing.JLabel();
-        btnSairIcon = new javax.swing.JButton();
+        closeIconPNG = new javax.swing.JButton();
         documentacaoBotao = new javax.swing.JLabel();
         selecaoJogadorBotao = new javax.swing.JLabel();
         creditosBotao = new javax.swing.JLabel();
@@ -73,23 +73,23 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         jPanel1.add(unidade);
         unidade.setBounds(670, 20, 210, 70);
 
-        btnSairIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
-        btnSairIcon.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        btnSairIcon.setMaximumSize(new java.awt.Dimension(54, 54));
-        btnSairIcon.setMinimumSize(new java.awt.Dimension(54, 54));
-        btnSairIcon.setPreferredSize(new java.awt.Dimension(54, 54));
-        btnSairIcon.addMouseListener(new java.awt.event.MouseAdapter() {
+        closeIconPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
+        closeIconPNG.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        closeIconPNG.setMaximumSize(new java.awt.Dimension(54, 54));
+        closeIconPNG.setMinimumSize(new java.awt.Dimension(54, 54));
+        closeIconPNG.setPreferredSize(new java.awt.Dimension(54, 54));
+        closeIconPNG.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnSairIconMouseClicked(evt);
+                closeIconPNGMouseClicked(evt);
             }
         });
-        btnSairIcon.addActionListener(new java.awt.event.ActionListener() {
+        closeIconPNG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSairIconActionPerformed(evt);
+                closeIconPNGActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSairIcon);
-        btnSairIcon.setBounds(30, 30, 54, 54);
+        jPanel1.add(closeIconPNG);
+        closeIconPNG.setBounds(30, 30, 54, 54);
 
         documentacaoBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
         documentacaoBotao.setForeground(new java.awt.Color(255, 255, 255));
@@ -242,14 +242,14 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSairIconActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairIconActionPerformed
+    private void closeIconPNGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeIconPNGActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSairIconActionPerformed
+    }//GEN-LAST:event_closeIconPNGActionPerformed
 
-    private void btnSairIconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSairIconMouseClicked
+    private void closeIconPNGMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeIconPNGMouseClicked
         setVisible(false);
         new PressEnterTela().setVisible(true);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSairIconMouseClicked
+    }//GEN-LAST:event_closeIconPNGMouseClicked
 
     private void sairBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sairBotaoMouseExited
         sairBotao.setForeground(Color.white);
@@ -362,7 +362,7 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSairIcon;
+    private javax.swing.JButton closeIconPNG;
     private javax.swing.JLabel creditosBotao;
     private javax.swing.JLabel documentacaoBotao;
     private javax.swing.JComboBox<String> jComboBox1;

@@ -73,7 +73,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="sairSelecaoUnidadeBotao" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="closeIconPNG" min="-2" pref="59" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
@@ -84,7 +84,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                  <Component id="sairSelecaoUnidadeBotao" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="closeIconPNG" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jTextField1" min="-2" pref="112" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
@@ -147,8 +147,8 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="SilhuetaPNG" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="guerraPNG" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -186,11 +186,11 @@
                                   <Component id="jButton4" alignment="3" min="-2" pref="54" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="SilhuetaPNG" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                          <Component id="guerraPNG" min="-2" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="unidade1EnterBotao2" min="-2" pref="49" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
@@ -284,14 +284,14 @@
                 <Property name="text" type="java.lang.String" value="Selecione o Jogador"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel1">
+            <Component class="javax.swing.JLabel" name="SilhuetaPNG">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="2" name="C:\Users\danie\OneDrive - Col&#xe9;gio Santa Cruz\Documentos\NetBeansProjects\ProjetoIntegradorS1\src\main\java\com\mycompany\mavenproject1\Imagens\Silhueta.png"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel4">
+            <Component class="javax.swing.JLabel" name="guerraPNG">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="2" name="C:\Users\danie\OneDrive - Col&#xe9;gio Santa Cruz\Documentos\NetBeansProjects\ProjetoIntegradorS1\src\main\java\com\mycompany\mavenproject1\Imagens\Guerra.png"/>
@@ -338,7 +338,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="sairSelecaoUnidadeBotao">
+        <Component class="javax.swing.JButton" name="closeIconPNG">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\danie\OneDrive - Col&#xe9;gio Santa Cruz\Documentos\NetBeansProjects\ProjetoIntegradorS1\src\main\java\com\mycompany\mavenproject1\Imagens\closeIcon.png"/>
@@ -350,7 +350,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sairSelecaoUnidadeBotaoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeIconPNGActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

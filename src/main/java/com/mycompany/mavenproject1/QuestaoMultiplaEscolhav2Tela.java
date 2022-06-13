@@ -31,12 +31,12 @@ public class QuestaoMultiplaEscolhav2Tela extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
         QuestaoMultiplaEscolha = new javax.swing.JPanel();
         marcarQuestao = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        menuIconPNG = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         jPanel8 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
+        TeoricaPNG = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jRadioButton1 = new javax.swing.JRadioButton();
@@ -75,11 +75,11 @@ public class QuestaoMultiplaEscolhav2Tela extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\MenuIcon.png")); // NOI18N
-        jButton6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        menuIconPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\MenuIcon.png")); // NOI18N
+        menuIconPNG.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        menuIconPNG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                menuIconPNGActionPerformed(evt);
             }
         });
 
@@ -105,21 +105,21 @@ public class QuestaoMultiplaEscolhav2Tela extends javax.swing.JFrame {
         jPanel8.setBackground(new java.awt.Color(153, 0, 255));
         jPanel8.setPreferredSize(new java.awt.Dimension(938, 185));
 
-        jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Teorica-1.png.png")); // NOI18N
-        jLabel23.setPreferredSize(new java.awt.Dimension(950, 185));
+        TeoricaPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Teorica.png.png")); // NOI18N
+        TeoricaPNG.setPreferredSize(new java.awt.Dimension(950, 185));
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 938, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TeoricaPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 938, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TeoricaPNG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -275,7 +275,7 @@ public class QuestaoMultiplaEscolhav2Tela extends javax.swing.JFrame {
                     .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(QuestaoMultiplaEscolhaLayout.createSequentialGroup()
                         .addGap(25, 25, 25)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(menuIconPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(19, 19, 19)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -295,7 +295,7 @@ public class QuestaoMultiplaEscolhav2Tela extends javax.swing.JFrame {
                         .addGroup(QuestaoMultiplaEscolhaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(QuestaoMultiplaEscolhaLayout.createSequentialGroup()
                                 .addGap(28, 28, 28)
-                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(menuIconPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(QuestaoMultiplaEscolhaLayout.createSequentialGroup()
                                 .addGap(36, 36, 36)
                                 .addGroup(QuestaoMultiplaEscolhaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -372,10 +372,10 @@ public class QuestaoMultiplaEscolhav2Tela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_marcarQuestaoActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void menuIconPNGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuIconPNGActionPerformed
         setVisible(false);
         new MenuPrincipalTela().setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_menuIconPNGActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
@@ -419,13 +419,12 @@ public class QuestaoMultiplaEscolhav2Tela extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea EnunciadoQuestaoAlternativa;
     private javax.swing.JPanel QuestaoMultiplaEscolha;
+    private javax.swing.JLabel TeoricaPNG;
     private javax.swing.JTextArea altA;
     private javax.swing.JTextArea altB;
     private javax.swing.JTextArea altC;
     private javax.swing.JTextArea altD;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel8;
@@ -443,5 +442,6 @@ public class QuestaoMultiplaEscolhav2Tela extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JButton marcarQuestao;
+    private javax.swing.JButton menuIconPNG;
     // End of variables declaration//GEN-END:variables
 }

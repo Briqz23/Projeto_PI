@@ -38,12 +38,12 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         EnunciadoQuestaoDissertativa = new javax.swing.JTextArea();
         VerificarDissertativaBotao = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        menuIconPNG = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        iconeAlertaPNG = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jPanel3 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
+        praticaPNG = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
 
@@ -107,11 +107,11 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\MenuIcon.png")); // NOI18N
-        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        menuIconPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\MenuIcon.png")); // NOI18N
+        menuIconPNG.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        menuIconPNG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                menuIconPNGActionPerformed(evt);
             }
         });
 
@@ -128,28 +128,29 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
             .addGap(0, 312, Short.MAX_VALUE)
         );
 
-        jLabel5.setPreferredSize(new java.awt.Dimension(54, 54));
+        iconeAlertaPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\iconeAlerta.png")); // NOI18N
+        iconeAlertaPNG.setPreferredSize(new java.awt.Dimension(54, 54));
 
         jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
 
         jPanel3.setBackground(new java.awt.Color(153, 0, 255));
         jPanel3.setPreferredSize(new java.awt.Dimension(938, 185));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Pratica-1.png.png")); // NOI18N
-        jLabel6.setPreferredSize(new java.awt.Dimension(950, 185));
+        praticaPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Pratica.png")); // NOI18N
+        praticaPNG.setPreferredSize(new java.awt.Dimension(950, 185));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 938, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(praticaPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 938, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(praticaPNG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -179,7 +180,7 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(iconeAlertaPNG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(108, 108, 108)
@@ -189,7 +190,7 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
                 .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
                         .addGap(25, 25, 25)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(menuIconPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel2))
@@ -213,7 +214,7 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
                 .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(menuIconPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -231,7 +232,7 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
                     .addGroup(QuestaoDissertativaRespostaTextAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(VerificarDissertativaBotao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(iconeAlertaPNG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -275,10 +276,10 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void menuIconPNGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuIconPNGActionPerformed
         setVisible(false);
         new MenuPrincipalTela().setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_menuIconPNGActionPerformed
 
     private void VerificarDissertativaBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerificarDissertativaBotaoActionPerformed
         // TODO add your handling code here:
@@ -327,13 +328,11 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
     private javax.swing.JTextArea EnunciadoQuestaoDissertativa;
     private javax.swing.JPanel QuestaoDissertativaRespostaTextArea;
     private javax.swing.JButton VerificarDissertativaBotao;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel iconeAlertaPNG;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -342,5 +341,7 @@ public class QuestaoDissertativaTela extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JButton menuIconPNG;
+    private javax.swing.JLabel praticaPNG;
     // End of variables declaration//GEN-END:variables
 }

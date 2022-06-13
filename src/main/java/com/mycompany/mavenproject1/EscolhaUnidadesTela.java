@@ -59,7 +59,7 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
         progressoU6 = new javax.swing.JTextField();
         progressoU7 = new javax.swing.JTextField();
         progressoU8 = new javax.swing.JTextField();
-        sairSelecaoUnidadeBotao = new javax.swing.JButton();
+        closeIconPNG = new javax.swing.JButton();
 
         jogarU2Botao1.setText("Jogar");
         jogarU2Botao1.addActionListener(new java.awt.event.ActionListener() {
@@ -578,11 +578,11 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
             .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        sairSelecaoUnidadeBotao.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
-        sairSelecaoUnidadeBotao.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        sairSelecaoUnidadeBotao.addActionListener(new java.awt.event.ActionListener() {
+        closeIconPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
+        closeIconPNG.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        closeIconPNG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sairSelecaoUnidadeBotaoActionPerformed(evt);
+                closeIconPNGActionPerformed(evt);
             }
         });
 
@@ -592,7 +592,7 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(sairSelecaoUnidadeBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(closeIconPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -603,7 +603,7 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(sairSelecaoUnidadeBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(closeIconPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(63, 63, 63)
@@ -631,10 +631,10 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jogarU2Botao1ActionPerformed
 
-    private void sairSelecaoUnidadeBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairSelecaoUnidadeBotaoActionPerformed
+    private void closeIconPNGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeIconPNGActionPerformed
         setVisible(false);
         new MenuPrincipalTela().setVisible(true);
-    }//GEN-LAST:event_sairSelecaoUnidadeBotaoActionPerformed
+    }//GEN-LAST:event_closeIconPNGActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -1040,6 +1040,7 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
     private javax.swing.JLabel SubtituloU6;
     private javax.swing.JLabel SubtituloU7;
     private javax.swing.JLabel SubtituloU8;
+    private javax.swing.JButton closeIconPNG;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
@@ -1054,7 +1055,6 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
     private javax.swing.JTextField progressoU6;
     private javax.swing.JTextField progressoU7;
     private javax.swing.JTextField progressoU8;
-    private javax.swing.JButton sairSelecaoUnidadeBotao;
     private javax.swing.JLabel unidade1EnterBotao;
     private javax.swing.JLabel unidade2EnterBotao;
     private javax.swing.JLabel unidade3EnterBotao;

@@ -75,7 +75,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                  <Component id="sairSelecaoUnidadeBotao" min="-2" pref="59" max="-2" attributes="0"/>
+                  <Component id="closeIconPNG" min="-2" pref="59" max="-2" attributes="0"/>
                   <EmptySpace pref="56" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jPanel2" max="32767" attributes="0"/>
@@ -89,7 +89,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                  <Component id="sairSelecaoUnidadeBotao" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="closeIconPNG" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
@@ -789,7 +789,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="sairSelecaoUnidadeBotao">
+        <Component class="javax.swing.JButton" name="closeIconPNG">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\danie\OneDrive - Col&#xe9;gio Santa Cruz\Documentos\NetBeansProjects\ProjetoIntegradorS1\src\main\java\com\mycompany\mavenproject1\Imagens\closeIcon.png"/>
@@ -801,7 +801,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sairSelecaoUnidadeBotaoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeIconPNGActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

@@ -219,7 +219,7 @@ public class VoceFoiAprovadoTela extends javax.swing.JFrame {
         jLabel13.setPreferredSize(new java.awt.Dimension(356, 25));
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Aparecido_dormindo_insonia2-1.png.png")); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Aparecido_dormindo.png")); // NOI18N
 
         marcarQuestao.setBackground(new java.awt.Color(85, 51, 141));
         marcarQuestao.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 20)); // NOI18N

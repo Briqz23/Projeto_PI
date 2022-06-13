@@ -44,6 +44,16 @@ public class HistoriaTela1 extends javax.swing.JFrame {
         });
 
         jPanel1.setBackground(new java.awt.Color(12, 12, 12));
+        jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel1MouseClicked(evt);
+            }
+        });
+        jPanel1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPanel1KeyPressed(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(12, 12, 12));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
@@ -135,11 +145,25 @@ public class HistoriaTela1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
-        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER){
             setVisible(false);
             new HistoriaTela2().setVisible(true);
+            
         } 
     }//GEN-LAST:event_formKeyPressed
+
+    private void jPanel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPanel1KeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER){
+            setVisible(false);
+            new HistoriaTela2().setVisible(true);
+            
+        } 
+    }//GEN-LAST:event_jPanel1KeyPressed
+
+    private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
+        setVisible(false);
+        new HistoriaTela2().setVisible(true);
+    }//GEN-LAST:event_jPanel1MouseClicked
 
     /**
      * @param args the command line arguments

@@ -55,7 +55,7 @@ public class VoceFoiReprovadoTela extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        aparecido_insoniaPNG = new javax.swing.JLabel();
         marcarQuestao = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -218,8 +218,8 @@ public class VoceFoiReprovadoTela extends javax.swing.JFrame {
         jLabel13.setText("de 10");
         jLabel13.setPreferredSize(new java.awt.Dimension(356, 25));
 
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Aparecido_dormindo_insonia2-1.png (1).png")); // NOI18N
+        aparecido_insoniaPNG.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        aparecido_insoniaPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\Aparecido_insonia.png")); // NOI18N
 
         marcarQuestao.setBackground(new java.awt.Color(85, 51, 141));
         marcarQuestao.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 20)); // NOI18N
@@ -291,7 +291,7 @@ public class VoceFoiReprovadoTela extends javax.swing.JFrame {
                     .addComponent(alt10)
                     .addComponent(alt9))
                 .addGap(104, 104, 104))
-            .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(aparecido_insoniaPNG, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 938, Short.MAX_VALUE)
             .addGroup(QuestionarioReprovadoLayout.createSequentialGroup()
                 .addGap(320, 320, 320)
@@ -334,7 +334,7 @@ public class VoceFoiReprovadoTela extends javax.swing.JFrame {
                     .addComponent(jLabel10)
                     .addComponent(jLabel12))
                 .addGap(34, 34, 34)
-                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(aparecido_insoniaPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addComponent(marcarQuestao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34))
@@ -428,13 +428,13 @@ public class VoceFoiReprovadoTela extends javax.swing.JFrame {
     private javax.swing.JRadioButton alt7;
     private javax.swing.JRadioButton alt8;
     private javax.swing.JRadioButton alt9;
+    private javax.swing.JLabel aparecido_insoniaPNG;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
