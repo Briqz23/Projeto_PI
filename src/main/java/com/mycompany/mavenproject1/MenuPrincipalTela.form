@@ -328,7 +328,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel1">
+            <Component class="javax.swing.JLabel" name="topoPNG">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="2" name="C:\Users\danie\OneDrive - Col&#xe9;gio Santa Cruz\Documentos\NetBeansProjects\ProjetoIntegradorS1\src\main\java\com\mycompany\mavenproject1\Imagens\topo.png"/>

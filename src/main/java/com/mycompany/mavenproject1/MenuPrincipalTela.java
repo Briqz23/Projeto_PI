@@ -38,7 +38,7 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         sairBotao = new javax.swing.JLabel();
         tutorialBotao = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        topoPNG = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -201,9 +201,9 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(110, 0, 300, 106);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\topo.png")); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(570, -50, 470, 210);
+        topoPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\topo.png")); // NOI18N
+        jPanel1.add(topoPNG);
+        topoPNG.setBounds(570, -50, 470, 210);
 
         jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
         jSeparator1.setMinimumSize(new java.awt.Dimension(948, 20));
@@ -366,7 +366,6 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
     private javax.swing.JLabel creditosBotao;
     private javax.swing.JLabel documentacaoBotao;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -375,6 +374,7 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
     private javax.swing.JLabel sairBotao;
     private javax.swing.JLabel selecaoJogadorBotao;
     private javax.swing.JLabel selecaoUnidadeBotao;
+    private javax.swing.JLabel topoPNG;
     private javax.swing.JLabel tutorialBotao;
     private javax.swing.JLabel unidade;
     // End of variables declaration//GEN-END:variables
