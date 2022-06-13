@@ -33,32 +33,32 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        SubtituloU2a = new javax.swing.JLabel();
+        SubtituloU2 = new javax.swing.JLabel();
         unidade4EnterBotao = new javax.swing.JLabel();
         unidade2EnterBotao = new javax.swing.JLabel();
         SubtituloU1 = new javax.swing.JLabel();
         SubtituloU3 = new javax.swing.JLabel();
         unidade3EnterBotao = new javax.swing.JLabel();
         SubtituloU4 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        unidade1EnterBotao1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        progressoU1 = new javax.swing.JTextField();
+        progressoU3 = new javax.swing.JTextField();
+        progressoU2 = new javax.swing.JTextField();
+        progressoU4 = new javax.swing.JTextField();
+        SubtituloU2b = new javax.swing.JLabel();
+        unidade1EnterBotao = new javax.swing.JLabel();
+        unidade5EnterBotao = new javax.swing.JLabel();
+        unidade6EnterBotao = new javax.swing.JLabel();
+        unidade7EnterBotao = new javax.swing.JLabel();
+        unidade8EnterBotao = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        SubtituloU5 = new javax.swing.JLabel();
+        SubtituloU6 = new javax.swing.JLabel();
+        SubtituloU7 = new javax.swing.JLabel();
+        SubtituloU8 = new javax.swing.JLabel();
+        progressoU5 = new javax.swing.JTextField();
+        progressoU6 = new javax.swing.JTextField();
+        progressoU7 = new javax.swing.JTextField();
+        progressoU8 = new javax.swing.JTextField();
         sairSelecaoUnidadeBotao = new javax.swing.JButton();
 
         jogarU2Botao1.setText("Jogar");
@@ -98,9 +98,17 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
         jPanel2.setPreferredSize(new java.awt.Dimension(968, 542));
 
-        SubtituloU2a.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
-        SubtituloU2a.setForeground(new java.awt.Color(255, 255, 255));
-        SubtituloU2a.setText("Arquitetura de SGBD e Modelo ");
+        SubtituloU2.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
+        SubtituloU2.setForeground(new java.awt.Color(255, 255, 255));
+        SubtituloU2.setText("Arquitetura de SGBD e Modelo ");
+        SubtituloU2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SubtituloU2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SubtituloU2MouseExited(evt);
+            }
+        });
 
         unidade4EnterBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
         unidade4EnterBotao.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,10 +143,26 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
         SubtituloU1.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
         SubtituloU1.setForeground(new java.awt.Color(255, 255, 255));
         SubtituloU1.setText("Introdução aos DBMS's");
+        SubtituloU1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SubtituloU1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SubtituloU1MouseExited(evt);
+            }
+        });
 
         SubtituloU3.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
         SubtituloU3.setForeground(new java.awt.Color(255, 255, 255));
         SubtituloU3.setText("Modelo Entidade-Relacionamento");
+        SubtituloU3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SubtituloU3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SubtituloU3MouseExited(evt);
+            }
+        });
 
         unidade3EnterBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
         unidade3EnterBotao.setForeground(new java.awt.Color(255, 255, 255));
@@ -158,137 +182,283 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
         SubtituloU4.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
         SubtituloU4.setForeground(new java.awt.Color(255, 255, 255));
         SubtituloU4.setText("Linguagem SQL - DDL");
-
-        jTextField4.setEditable(false);
-        jTextField4.setBackground(new java.awt.Color(12, 12, 12));
-        jTextField4.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField4.setText("0%");
-        jTextField4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
-            }
-        });
-
-        jTextField5.setEditable(false);
-        jTextField5.setBackground(new java.awt.Color(12, 12, 12));
-        jTextField5.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField5.setText("0%");
-        jTextField5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-
-        jTextField6.setEditable(false);
-        jTextField6.setBackground(new java.awt.Color(12, 12, 12));
-        jTextField6.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField6.setText("0%");
-        jTextField6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-
-        jTextField7.setEditable(false);
-        jTextField7.setBackground(new java.awt.Color(12, 12, 12));
-        jTextField7.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jTextField7.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.setText("0%");
-        jTextField7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-
-        jLabel1.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Relacional");
-
-        unidade1EnterBotao1.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        unidade1EnterBotao1.setForeground(new java.awt.Color(255, 255, 255));
-        unidade1EnterBotao1.setText("Unidade 1");
-        unidade1EnterBotao1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                unidade1EnterBotao1MouseClicked(evt);
-            }
+        SubtituloU4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                unidade1EnterBotao1MouseEntered(evt);
+                SubtituloU4MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                unidade1EnterBotao1MouseExited(evt);
+                SubtituloU4MouseExited(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Unidade 5");
-        jLabel2.setPreferredSize(new java.awt.Dimension(180, 44));
+        progressoU1.setEditable(false);
+        progressoU1.setBackground(new java.awt.Color(12, 12, 12));
+        progressoU1.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        progressoU1.setForeground(new java.awt.Color(255, 255, 255));
+        progressoU1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        progressoU1.setText("0%");
+        progressoU1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        progressoU1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                progressoU1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                progressoU1MouseExited(evt);
+            }
+        });
 
-        jLabel3.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Unidade 6");
-        jLabel3.setPreferredSize(new java.awt.Dimension(180, 44));
+        progressoU3.setEditable(false);
+        progressoU3.setBackground(new java.awt.Color(12, 12, 12));
+        progressoU3.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        progressoU3.setForeground(new java.awt.Color(255, 255, 255));
+        progressoU3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        progressoU3.setText("0%");
+        progressoU3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        progressoU3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                progressoU3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                progressoU3MouseExited(evt);
+            }
+        });
 
-        jLabel4.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Unidade 7");
-        jLabel4.setPreferredSize(new java.awt.Dimension(180, 44));
+        progressoU2.setEditable(false);
+        progressoU2.setBackground(new java.awt.Color(12, 12, 12));
+        progressoU2.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        progressoU2.setForeground(new java.awt.Color(255, 255, 255));
+        progressoU2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        progressoU2.setText("0%");
+        progressoU2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        progressoU2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                progressoU2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                progressoU2MouseExited(evt);
+            }
+        });
 
-        jLabel5.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Unidade 8");
-        jLabel5.setPreferredSize(new java.awt.Dimension(180, 44));
+        progressoU4.setEditable(false);
+        progressoU4.setBackground(new java.awt.Color(12, 12, 12));
+        progressoU4.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        progressoU4.setForeground(new java.awt.Color(255, 255, 255));
+        progressoU4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        progressoU4.setText("0%");
+        progressoU4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        progressoU4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                progressoU4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                progressoU4MouseExited(evt);
+            }
+        });
+
+        SubtituloU2b.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
+        SubtituloU2b.setForeground(new java.awt.Color(255, 255, 255));
+        SubtituloU2b.setText("Relacional");
+        SubtituloU2b.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SubtituloU2bMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SubtituloU2bMouseExited(evt);
+            }
+        });
+
+        unidade1EnterBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        unidade1EnterBotao.setForeground(new java.awt.Color(255, 255, 255));
+        unidade1EnterBotao.setText("Unidade 1");
+        unidade1EnterBotao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                unidade1EnterBotaoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                unidade1EnterBotaoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                unidade1EnterBotaoMouseExited(evt);
+            }
+        });
+
+        unidade5EnterBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        unidade5EnterBotao.setForeground(new java.awt.Color(255, 255, 255));
+        unidade5EnterBotao.setText("Unidade 5");
+        unidade5EnterBotao.setPreferredSize(new java.awt.Dimension(180, 44));
+        unidade5EnterBotao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                unidade5EnterBotaoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                unidade5EnterBotaoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                unidade5EnterBotaoMouseExited(evt);
+            }
+        });
+
+        unidade6EnterBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        unidade6EnterBotao.setForeground(new java.awt.Color(255, 255, 255));
+        unidade6EnterBotao.setText("Unidade 6");
+        unidade6EnterBotao.setPreferredSize(new java.awt.Dimension(180, 44));
+        unidade6EnterBotao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                unidade6EnterBotaoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                unidade6EnterBotaoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                unidade6EnterBotaoMouseExited(evt);
+            }
+        });
+
+        unidade7EnterBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        unidade7EnterBotao.setForeground(new java.awt.Color(255, 255, 255));
+        unidade7EnterBotao.setText("Unidade 7");
+        unidade7EnterBotao.setPreferredSize(new java.awt.Dimension(180, 44));
+        unidade7EnterBotao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                unidade7EnterBotaoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                unidade7EnterBotaoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                unidade7EnterBotaoMouseExited(evt);
+            }
+        });
+
+        unidade8EnterBotao.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        unidade8EnterBotao.setForeground(new java.awt.Color(255, 255, 255));
+        unidade8EnterBotao.setText("Unidade 8");
+        unidade8EnterBotao.setPreferredSize(new java.awt.Dimension(180, 44));
+        unidade8EnterBotao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                unidade8EnterBotaoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                unidade8EnterBotaoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                unidade8EnterBotaoMouseExited(evt);
+            }
+        });
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
         jSeparator1.setPreferredSize(new java.awt.Dimension(5, 5));
 
-        jLabel6.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Álgebra Relacional");
+        SubtituloU5.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
+        SubtituloU5.setForeground(new java.awt.Color(255, 255, 255));
+        SubtituloU5.setText("Álgebra Relacional");
+        SubtituloU5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SubtituloU5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SubtituloU5MouseExited(evt);
+            }
+        });
 
-        jLabel7.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("SQL - DML");
+        SubtituloU6.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
+        SubtituloU6.setForeground(new java.awt.Color(255, 255, 255));
+        SubtituloU6.setText("SQL - DML");
+        SubtituloU6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SubtituloU6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SubtituloU6MouseExited(evt);
+            }
+        });
 
-        jLabel8.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Queries Multi-Tabelas");
+        SubtituloU7.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
+        SubtituloU7.setForeground(new java.awt.Color(255, 255, 255));
+        SubtituloU7.setText("Queries Multi-Tabelas");
+        SubtituloU7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SubtituloU7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SubtituloU7MouseExited(evt);
+            }
+        });
 
-        jLabel9.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Boas Práticas e Normalização");
+        SubtituloU8.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
+        SubtituloU8.setForeground(new java.awt.Color(255, 255, 255));
+        SubtituloU8.setText("Boas Práticas e Normalização");
+        SubtituloU8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SubtituloU8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SubtituloU8MouseExited(evt);
+            }
+        });
 
-        jTextField2.setBackground(new java.awt.Color(12, 12, 12));
-        jTextField2.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setText("0%");
-        jTextField2.setBorder(null);
-        jTextField2.setMinimumSize(new java.awt.Dimension(93, 49));
+        progressoU5.setBackground(new java.awt.Color(12, 12, 12));
+        progressoU5.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        progressoU5.setForeground(new java.awt.Color(255, 255, 255));
+        progressoU5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        progressoU5.setText("0%");
+        progressoU5.setBorder(null);
+        progressoU5.setMinimumSize(new java.awt.Dimension(93, 49));
+        progressoU5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                progressoU5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                progressoU5MouseExited(evt);
+            }
+        });
 
-        jTextField3.setBackground(new java.awt.Color(12, 12, 12));
-        jTextField3.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField3.setText("0%");
-        jTextField3.setBorder(null);
-        jTextField3.setMinimumSize(new java.awt.Dimension(93, 49));
+        progressoU6.setBackground(new java.awt.Color(12, 12, 12));
+        progressoU6.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        progressoU6.setForeground(new java.awt.Color(255, 255, 255));
+        progressoU6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        progressoU6.setText("0%");
+        progressoU6.setBorder(null);
+        progressoU6.setMinimumSize(new java.awt.Dimension(93, 49));
+        progressoU6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                progressoU6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                progressoU6MouseExited(evt);
+            }
+        });
 
-        jTextField9.setBackground(new java.awt.Color(12, 12, 12));
-        jTextField9.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jTextField9.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField9.setText("0%");
-        jTextField9.setBorder(null);
-        jTextField9.setMinimumSize(new java.awt.Dimension(93, 49));
+        progressoU7.setBackground(new java.awt.Color(12, 12, 12));
+        progressoU7.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        progressoU7.setForeground(new java.awt.Color(255, 255, 255));
+        progressoU7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        progressoU7.setText("0%");
+        progressoU7.setBorder(null);
+        progressoU7.setMinimumSize(new java.awt.Dimension(93, 49));
+        progressoU7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                progressoU7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                progressoU7MouseExited(evt);
+            }
+        });
 
-        jTextField10.setBackground(new java.awt.Color(12, 12, 12));
-        jTextField10.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
-        jTextField10.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField10.setText("0%");
-        jTextField10.setBorder(null);
-        jTextField10.setMinimumSize(new java.awt.Dimension(93, 49));
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
+        progressoU8.setBackground(new java.awt.Color(12, 12, 12));
+        progressoU8.setFont(new java.awt.Font("Montserrat Medium", 0, 36)); // NOI18N
+        progressoU8.setForeground(new java.awt.Color(255, 255, 255));
+        progressoU8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        progressoU8.setText("0%");
+        progressoU8.setBorder(null);
+        progressoU8.setMinimumSize(new java.awt.Dimension(93, 49));
+        progressoU8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                progressoU8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                progressoU8MouseExited(evt);
             }
         });
 
@@ -297,55 +467,54 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(SubtituloU4, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(60, 60, 60)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel1)
-                                .addComponent(SubtituloU2a)))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGap(61, 61, 61)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(SubtituloU3)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(unidade3EnterBotao)
-                                        .addComponent(unidade2EnterBotao)
-                                        .addComponent(unidade4EnterBotao)
-                                        .addComponent(SubtituloU1)
-                                        .addComponent(unidade1EnterBotao1))
-                                    .addGap(36, 36, 36)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE)
-                                            .addComponent(jTextField6)
-                                            .addComponent(jTextField5))
-                                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                .addGap(61, 61, 61)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SubtituloU2b)
+                            .addComponent(SubtituloU2)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SubtituloU3)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(unidade3EnterBotao)
+                                    .addComponent(unidade2EnterBotao)
+                                    .addComponent(unidade4EnterBotao)
+                                    .addComponent(SubtituloU1)
+                                    .addComponent(unidade1EnterBotao))
+                                .addGap(36, 36, 36)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(progressoU1, javax.swing.GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE)
+                                        .addComponent(progressoU2)
+                                        .addComponent(progressoU3))
+                                    .addComponent(progressoU4, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(SubtituloU4, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(35, 35, 35)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel9)
+                        .addComponent(SubtituloU8)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
+                            .addComponent(SubtituloU7)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel7)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE))
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(unidade5EnterBotao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(SubtituloU6)
+                                .addComponent(SubtituloU5, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE))
+                            .addComponent(unidade6EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(unidade7EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(unidade8EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(progressoU8, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(progressoU7, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(progressoU6, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(progressoU5, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(61, 61, 61))))
         );
         jPanel2Layout.setVerticalGroup(
@@ -354,58 +523,58 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
                 .addGap(62, 62, 62)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(unidade5EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(1, 1, 1)
+                                .addComponent(SubtituloU5)
+                                .addGap(31, 31, 31)
+                                .addComponent(unidade6EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(1, 1, 1)
+                                .addComponent(SubtituloU6)
+                                .addGap(54, 54, 54)
+                                .addComponent(unidade7EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(1, 1, 1)
+                                .addComponent(SubtituloU7)
+                                .addGap(31, 31, 31)
+                                .addComponent(unidade8EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(progressoU5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(56, 56, 56)
+                                .addComponent(progressoU6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(78, 78, 78)
+                                .addComponent(progressoU7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(56, 56, 56)
+                                .addComponent(progressoU8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SubtituloU8))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(unidade1EnterBotao1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(unidade1EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(progressoU1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(1, 1, 1)
                         .addComponent(SubtituloU1)
                         .addGap(30, 30, 30)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(unidade2EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(progressoU2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(1, 1, 1)
-                        .addComponent(SubtituloU2a)
+                        .addComponent(SubtituloU2)
                         .addGap(2, 2, 2)
-                        .addComponent(jLabel1)
+                        .addComponent(SubtituloU2b)
                         .addGap(30, 30, 30)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(unidade3EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(progressoU3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(1, 1, 1)
                         .addComponent(SubtituloU3)
                         .addGap(30, 30, 30)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(unidade4EnterBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(1, 1, 1)
-                        .addComponent(SubtituloU4))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(1, 1, 1)
-                                .addComponent(jLabel6)
-                                .addGap(31, 31, 31)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(1, 1, 1)
-                                .addComponent(jLabel7)
-                                .addGap(54, 54, 54)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(1, 1, 1)
-                                .addComponent(jLabel8)
-                                .addGap(31, 31, 31)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(56, 56, 56)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(78, 78, 78)
-                                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(56, 56, 56)
-                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(1, 1, 1)
-                        .addComponent(jLabel9)))
-                .addGap(63, 63, 63))
+                            .addComponent(progressoU4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SubtituloU4)))
+                .addGap(57, 57, 57))
             .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -462,73 +631,369 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jogarU2Botao1ActionPerformed
 
-    private void unidade4EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade4EnterBotaoMouseEntered
-        unidade4EnterBotao.setForeground(new Color(147,87,242));
-    }//GEN-LAST:event_unidade4EnterBotaoMouseEntered
-
-    private void unidade4EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade4EnterBotaoMouseExited
-        unidade4EnterBotao.setForeground(Color.white); 
-    }//GEN-LAST:event_unidade4EnterBotaoMouseExited
-
-    private void unidade2EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade2EnterBotaoMouseEntered
-        unidade2EnterBotao.setForeground(new Color(147,87,242));
-    }//GEN-LAST:event_unidade2EnterBotaoMouseEntered
-
-    private void unidade2EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade2EnterBotaoMouseExited
-        unidade2EnterBotao.setForeground(Color.white); 
-    }//GEN-LAST:event_unidade2EnterBotaoMouseExited
-
-    private void unidade3EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade3EnterBotaoMouseEntered
-        unidade3EnterBotao.setForeground(new Color(147,87,242));
-    }//GEN-LAST:event_unidade3EnterBotaoMouseEntered
-
-    private void unidade3EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade3EnterBotaoMouseExited
-        unidade3EnterBotao.setForeground(Color.white); 
-    }//GEN-LAST:event_unidade3EnterBotaoMouseExited
-
     private void sairSelecaoUnidadeBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairSelecaoUnidadeBotaoActionPerformed
         setVisible(false);
         new MenuPrincipalTela().setVisible(true);
     }//GEN-LAST:event_sairSelecaoUnidadeBotaoActionPerformed
 
-    private void unidade2EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade2EnterBotaoMouseClicked
-        setVisible(false);
-       new U2EnterTela().setVisible(true);  // TODO add your handling code here:
-    }//GEN-LAST:event_unidade2EnterBotaoMouseClicked
-
-    private void unidade3EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade3EnterBotaoMouseClicked
-        setVisible(false);
-       new U3EnterTela().setVisible(true);  // TODO add your handling code here:
-    }//GEN-LAST:event_unidade3EnterBotaoMouseClicked
-
-    private void unidade4EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade4EnterBotaoMouseClicked
-        setVisible(false);
-       new U4EnterTela().setVisible(true);  // TODO add your handling code here:
-    }//GEN-LAST:event_unidade4EnterBotaoMouseClicked
-
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    private void unidade1EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade1EnterBotaoMouseEntered
+        SubtituloU1.setForeground(new Color(147,87,242));
+       	unidade1EnterBotao.setForeground(new Color(147,87,242));
+        progressoU1.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_unidade1EnterBotaoMouseEntered
 
-    private void unidade1EnterBotao1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade1EnterBotao1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_unidade1EnterBotao1MouseClicked
+    private void SubtituloU1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU1MouseEntered
+	SubtituloU1.setForeground(new Color(147,87,242));
+       	unidade1EnterBotao.setForeground(new Color(147,87,242));
+        progressoU1.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_SubtituloU1MouseEntered
 
-    private void unidade1EnterBotao1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade1EnterBotao1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_unidade1EnterBotao1MouseEntered
+    private void progressoU1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU1MouseEntered
+        
+	SubtituloU1.setForeground(new Color(147,87,242));
+        unidade1EnterBotao.setForeground(new Color(147,87,242));
+        progressoU1.setForeground(new Color(147,87,242));
 
-    private void unidade1EnterBotao1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade1EnterBotao1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_unidade1EnterBotao1MouseExited
+    }//GEN-LAST:event_progressoU1MouseEntered
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
+    private void unidade1EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade1EnterBotaoMouseExited
+
+        SubtituloU2.setForeground(Color.white);
+        unidade2EnterBotao.setForeground(Color.white);
+        progressoU2.setForeground(Color.white);
+    }//GEN-LAST:event_unidade1EnterBotaoMouseExited
+
+    private void progressoU1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU1MouseExited
+        SubtituloU1.setForeground(Color.white);
+        unidade1EnterBotao.setForeground(Color.white);
+        progressoU1.setForeground(Color.white);
+    }//GEN-LAST:event_progressoU1MouseExited
+
+    private void SubtituloU1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU1MouseExited
+        SubtituloU1.setForeground(Color.white);
+        unidade1EnterBotao.setForeground(Color.white);
+        progressoU1.setForeground(Color.white);
+    }//GEN-LAST:event_SubtituloU1MouseExited
+
+    private void unidade1EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade1EnterBotaoMouseClicked
+        setVisible(false);
+        new U1EnterTela().setVisible(true);
+    }//GEN-LAST:event_unidade1EnterBotaoMouseClicked
+
+    private void unidade2EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade2EnterBotaoMouseEntered
+        SubtituloU2.setForeground(new Color(147,87,242));
+        SubtituloU2b.setForeground(new Color(147,87,242));
+        unidade2EnterBotao.setForeground(new Color(147,87,242));
+        progressoU2.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_unidade2EnterBotaoMouseEntered
+
+    private void unidade3EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade3EnterBotaoMouseEntered
+ 	SubtituloU3.setForeground(new Color(147,87,242));
+       	unidade3EnterBotao.setForeground(new Color(147,87,242));
+        progressoU3.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_unidade3EnterBotaoMouseEntered
+
+    private void unidade4EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade4EnterBotaoMouseEntered
+        SubtituloU4.setForeground(new Color(147,87,242));
+       	unidade4EnterBotao.setForeground(new Color(147,87,242));
+        progressoU4.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_unidade4EnterBotaoMouseEntered
+
+    private void unidade5EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade5EnterBotaoMouseEntered
+        SubtituloU5.setForeground(new Color(147,87,242));
+       	unidade5EnterBotao.setForeground(new Color(147,87,242));
+        progressoU5.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_unidade5EnterBotaoMouseEntered
+
+    private void unidade6EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade6EnterBotaoMouseEntered
+        SubtituloU6.setForeground(new Color(147,87,242));
+       	unidade6EnterBotao.setForeground(new Color(147,87,242));
+        progressoU6.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_unidade6EnterBotaoMouseEntered
+
+    private void unidade7EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade7EnterBotaoMouseEntered
+        SubtituloU7.setForeground(new Color(147,87,242));
+       	unidade7EnterBotao.setForeground(new Color(147,87,242));
+        progressoU7.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_unidade7EnterBotaoMouseEntered
+
+    private void unidade8EnterBotaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade8EnterBotaoMouseEntered
+        SubtituloU8.setForeground(new Color(147,87,242));
+       	unidade8EnterBotao.setForeground(new Color(147,87,242));
+        progressoU8.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_unidade8EnterBotaoMouseEntered
+
+    private void SubtituloU2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU2MouseEntered
+        SubtituloU2.setForeground(new Color(147,87,242));
+        SubtituloU2b.setForeground(new Color(147,87,242));
+        unidade2EnterBotao.setForeground(new Color(147,87,242));
+        progressoU2.setForeground(new Color(147,87,242));
+
+        
+    }//GEN-LAST:event_SubtituloU2MouseEntered
+
+    private void SubtituloU2bMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU2bMouseEntered
+        SubtituloU2.setForeground(new Color(147,87,242));
+        SubtituloU2b.setForeground(new Color(147,87,242));
+        unidade2EnterBotao.setForeground(new Color(147,87,242));
+        progressoU2.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_SubtituloU2bMouseEntered
+
+    private void SubtituloU3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU3MouseEntered
+        SubtituloU3.setForeground(new Color(147,87,242));
+       	unidade3EnterBotao.setForeground(new Color(147,87,242));
+        progressoU3.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_SubtituloU3MouseEntered
+
+    private void SubtituloU4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU4MouseEntered
+        SubtituloU4.setForeground(new Color(147,87,242));
+       	unidade4EnterBotao.setForeground(new Color(147,87,242));
+        progressoU4.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_SubtituloU4MouseEntered
+
+    private void SubtituloU5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU5MouseEntered
+        SubtituloU5.setForeground(new Color(147,87,242));
+       	unidade5EnterBotao.setForeground(new Color(147,87,242));
+        progressoU5.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_SubtituloU5MouseEntered
+
+    private void SubtituloU6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU6MouseEntered
+        SubtituloU6.setForeground(new Color(147,87,242));
+       	unidade6EnterBotao.setForeground(new Color(147,87,242));
+        progressoU6.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_SubtituloU6MouseEntered
+
+    private void SubtituloU7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU7MouseEntered
+        SubtituloU7.setForeground(new Color(147,87,242));
+       	unidade7EnterBotao.setForeground(new Color(147,87,242));
+        progressoU7.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_SubtituloU7MouseEntered
+
+    private void SubtituloU8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU8MouseEntered
+        SubtituloU8.setForeground(new Color(147,87,242));
+       	unidade8EnterBotao.setForeground(new Color(147,87,242));
+        progressoU8.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_SubtituloU8MouseEntered
+
+    private void progressoU2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU2MouseEntered
+        SubtituloU2.setForeground(new Color(147,87,242));
+        SubtituloU2b.setForeground(new Color(147,87,242));
+        unidade2EnterBotao.setForeground(new Color(147,87,242));
+        progressoU2.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_progressoU2MouseEntered
+
+    private void progressoU3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU3MouseEntered
+        SubtituloU3.setForeground(new Color(147,87,242));
+       	unidade3EnterBotao.setForeground(new Color(147,87,242));
+        progressoU3.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_progressoU3MouseEntered
+
+    private void progressoU4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU4MouseEntered
+        SubtituloU4.setForeground(new Color(147,87,242));
+       	unidade4EnterBotao.setForeground(new Color(147,87,242));
+        progressoU4.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_progressoU4MouseEntered
+
+    private void progressoU5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU5MouseEntered
+        SubtituloU5.setForeground(new Color(147,87,242));
+       	unidade5EnterBotao.setForeground(new Color(147,87,242));
+        progressoU5.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_progressoU5MouseEntered
+
+    private void progressoU6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU6MouseEntered
+        SubtituloU6.setForeground(new Color(147,87,242));
+       	unidade6EnterBotao.setForeground(new Color(147,87,242));
+        progressoU6.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_progressoU6MouseEntered
+
+    private void progressoU7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU7MouseEntered
+        SubtituloU7.setForeground(new Color(147,87,242));
+       	unidade7EnterBotao.setForeground(new Color(147,87,242));
+        progressoU7.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_progressoU7MouseEntered
+
+    private void progressoU8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU8MouseEntered
+        SubtituloU8.setForeground(new Color(147,87,242));
+       	unidade8EnterBotao.setForeground(new Color(147,87,242));
+        progressoU8.setForeground(new Color(147,87,242));
+    }//GEN-LAST:event_progressoU8MouseEntered
+
+    private void unidade2EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade2EnterBotaoMouseExited
+         unidade2EnterBotao.setForeground(Color.white);
+         SubtituloU2.setForeground(Color.white);
+        SubtituloU2b.setForeground(Color.white);
+        unidade2EnterBotao.setForeground(Color.white);
+        progressoU2.setForeground(Color.white);
+    }//GEN-LAST:event_unidade2EnterBotaoMouseExited
+
+    private void unidade3EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade3EnterBotaoMouseExited
+        SubtituloU3.setForeground(Color.white);
+        unidade3EnterBotao.setForeground(Color.white);
+        progressoU3.setForeground(Color.white);
+    }//GEN-LAST:event_unidade3EnterBotaoMouseExited
+
+    private void unidade4EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade4EnterBotaoMouseExited
+        SubtituloU4.setForeground(Color.white);
+        unidade4EnterBotao.setForeground(Color.white);
+        progressoU4.setForeground(Color.white);
+    }//GEN-LAST:event_unidade4EnterBotaoMouseExited
+
+    private void unidade5EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade5EnterBotaoMouseExited
+        SubtituloU5.setForeground(Color.white);
+        unidade5EnterBotao.setForeground(Color.white);
+        progressoU5.setForeground(Color.white);
+    }//GEN-LAST:event_unidade5EnterBotaoMouseExited
+
+    private void unidade6EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade6EnterBotaoMouseExited
+        SubtituloU6.setForeground(Color.white);
+        unidade6EnterBotao.setForeground(Color.white);
+        progressoU6.setForeground(Color.white);
+    }//GEN-LAST:event_unidade6EnterBotaoMouseExited
+
+    private void unidade7EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade7EnterBotaoMouseExited
+        SubtituloU7.setForeground(Color.white);
+        unidade7EnterBotao.setForeground(Color.white);
+        progressoU7.setForeground(Color.white);
+    }//GEN-LAST:event_unidade7EnterBotaoMouseExited
+
+    private void unidade8EnterBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade8EnterBotaoMouseExited
+        SubtituloU8.setForeground(Color.white);
+        unidade8EnterBotao.setForeground(Color.white);
+        progressoU8.setForeground(Color.white);
+    }//GEN-LAST:event_unidade8EnterBotaoMouseExited
+
+    private void SubtituloU2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU2MouseExited
+        SubtituloU2.setForeground(Color.white);
+        unidade2EnterBotao.setForeground(Color.white);
+        progressoU2.setForeground(Color.white);
+    }//GEN-LAST:event_SubtituloU2MouseExited
+
+    private void SubtituloU2bMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU2bMouseExited
+        unidade2EnterBotao.setForeground(Color.white);
+        SubtituloU2.setForeground(Color.white);
+        SubtituloU2b.setForeground(Color.white);
+        unidade2EnterBotao.setForeground(Color.white);
+        progressoU2.setForeground(Color.white);
+    }//GEN-LAST:event_SubtituloU2bMouseExited
+
+    private void SubtituloU3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU3MouseExited
+        SubtituloU3.setForeground(Color.white);
+        unidade3EnterBotao.setForeground(Color.white);
+        progressoU3.setForeground(Color.white);
+    }//GEN-LAST:event_SubtituloU3MouseExited
+
+    private void SubtituloU4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU4MouseExited
+        SubtituloU4.setForeground(Color.white);
+        unidade4EnterBotao.setForeground(Color.white);
+        progressoU4.setForeground(Color.white);
+    }//GEN-LAST:event_SubtituloU4MouseExited
+
+    private void SubtituloU5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU5MouseExited
+        SubtituloU5.setForeground(Color.white);
+        unidade5EnterBotao.setForeground(Color.white);
+        progressoU5.setForeground(Color.white);
+    }//GEN-LAST:event_SubtituloU5MouseExited
+
+    private void SubtituloU6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU6MouseExited
+        SubtituloU6.setForeground(Color.white);
+        unidade6EnterBotao.setForeground(Color.white);
+        progressoU6.setForeground(Color.white);
+    }//GEN-LAST:event_SubtituloU6MouseExited
+
+    private void SubtituloU7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU7MouseExited
+        SubtituloU7.setForeground(Color.white);
+        unidade7EnterBotao.setForeground(Color.white);
+        progressoU7.setForeground(Color.white);
+    }//GEN-LAST:event_SubtituloU7MouseExited
+
+    private void SubtituloU8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SubtituloU8MouseExited
+        SubtituloU8.setForeground(Color.white);
+        unidade8EnterBotao.setForeground(Color.white);
+        progressoU8.setForeground(Color.white);
+    }//GEN-LAST:event_SubtituloU8MouseExited
+
+    private void progressoU2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU2MouseExited
+        unidade2EnterBotao.setForeground(Color.white);
+        SubtituloU2.setForeground(Color.white);
+        SubtituloU2b.setForeground(Color.white);
+        unidade2EnterBotao.setForeground(Color.white);
+        progressoU2.setForeground(Color.white);
+    }//GEN-LAST:event_progressoU2MouseExited
+
+    private void progressoU3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU3MouseExited
+        SubtituloU3.setForeground(Color.white);
+        unidade3EnterBotao.setForeground(Color.white);
+        progressoU3.setForeground(Color.white);
+    }//GEN-LAST:event_progressoU3MouseExited
+
+    private void progressoU4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU4MouseExited
+        SubtituloU4.setForeground(Color.white);
+        unidade4EnterBotao.setForeground(Color.white);
+        progressoU4.setForeground(Color.white);
+    }//GEN-LAST:event_progressoU4MouseExited
+
+    private void progressoU5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU5MouseExited
+        SubtituloU5.setForeground(Color.white);
+        unidade5EnterBotao.setForeground(Color.white);
+        progressoU5.setForeground(Color.white);
+    }//GEN-LAST:event_progressoU5MouseExited
+
+    private void progressoU6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU6MouseExited
+        SubtituloU6.setForeground(Color.white);
+        unidade6EnterBotao.setForeground(Color.white);
+        progressoU6.setForeground(Color.white);
+    }//GEN-LAST:event_progressoU6MouseExited
+
+    private void progressoU7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU7MouseExited
+        SubtituloU7.setForeground(Color.white);
+        unidade7EnterBotao.setForeground(Color.white);
+        progressoU7.setForeground(Color.white);
+    }//GEN-LAST:event_progressoU7MouseExited
+
+    private void progressoU8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoU8MouseExited
+        SubtituloU8.setForeground(Color.white);
+        unidade8EnterBotao.setForeground(Color.white);
+        progressoU8.setForeground(Color.white);
+    }//GEN-LAST:event_progressoU8MouseExited
+
+    private void unidade2EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade2EnterBotaoMouseClicked
+        setVisible(false);
+        new U2EnterTela().setVisible(true);
+    }//GEN-LAST:event_unidade2EnterBotaoMouseClicked
+
+    private void unidade3EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade3EnterBotaoMouseClicked
+        setVisible(false);
+        new U3EnterTela().setVisible(true);
+    }//GEN-LAST:event_unidade3EnterBotaoMouseClicked
+
+    private void unidade4EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade4EnterBotaoMouseClicked
+        setVisible(false);
+        new U4EnterTela().setVisible(true);
+    }//GEN-LAST:event_unidade4EnterBotaoMouseClicked
+
+    private void unidade5EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade5EnterBotaoMouseClicked
+        setVisible(false);
+        new U5EnterTela().setVisible(true);
+    }//GEN-LAST:event_unidade5EnterBotaoMouseClicked
+
+    private void unidade6EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade6EnterBotaoMouseClicked
+        setVisible(false);
+        new U6EnterTela().setVisible(true);
+    }//GEN-LAST:event_unidade6EnterBotaoMouseClicked
+
+    private void unidade7EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade7EnterBotaoMouseClicked
+        setVisible(false);
+        new U7EnterTela().setVisible(true);
+    }//GEN-LAST:event_unidade7EnterBotaoMouseClicked
+
+    private void unidade8EnterBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unidade8EnterBotaoMouseClicked
+        setVisible(false);
+        new U8EnterTela().setVisible(true);
+    }//GEN-LAST:event_unidade8EnterBotaoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -567,36 +1032,36 @@ public class EscolhaUnidadesTela extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel SubtituloU1;
-    private javax.swing.JLabel SubtituloU2a;
+    private javax.swing.JLabel SubtituloU2;
+    private javax.swing.JLabel SubtituloU2b;
     private javax.swing.JLabel SubtituloU3;
     private javax.swing.JLabel SubtituloU4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel SubtituloU5;
+    private javax.swing.JLabel SubtituloU6;
+    private javax.swing.JLabel SubtituloU7;
+    private javax.swing.JLabel SubtituloU8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private javax.swing.JButton jogarU2Botao1;
+    private javax.swing.JTextField progressoU1;
+    private javax.swing.JTextField progressoU2;
+    private javax.swing.JTextField progressoU3;
+    private javax.swing.JTextField progressoU4;
+    private javax.swing.JTextField progressoU5;
+    private javax.swing.JTextField progressoU6;
+    private javax.swing.JTextField progressoU7;
+    private javax.swing.JTextField progressoU8;
     private javax.swing.JButton sairSelecaoUnidadeBotao;
-    private javax.swing.JLabel unidade1EnterBotao1;
+    private javax.swing.JLabel unidade1EnterBotao;
     private javax.swing.JLabel unidade2EnterBotao;
     private javax.swing.JLabel unidade3EnterBotao;
     private javax.swing.JLabel unidade4EnterBotao;
+    private javax.swing.JLabel unidade5EnterBotao;
+    private javax.swing.JLabel unidade6EnterBotao;
+    private javax.swing.JLabel unidade7EnterBotao;
+    private javax.swing.JLabel unidade8EnterBotao;
     // End of variables declaration//GEN-END:variables
 }

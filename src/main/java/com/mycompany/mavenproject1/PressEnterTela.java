@@ -134,13 +134,16 @@ public class PressEnterTela extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
-       
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            setVisible(false);
+            new EscolhaJogadorTela().setVisible(true);
+        }      
     }//GEN-LAST:event_formKeyPressed
 
     private void jPanel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPanel1KeyPressed
-         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
-        setVisible(false);
-        new EscolhaJogadorTela().setVisible(true);
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            setVisible(false);
+            new EscolhaJogadorTela().setVisible(true);
         }
     }//GEN-LAST:event_jPanel1KeyPressed
 
