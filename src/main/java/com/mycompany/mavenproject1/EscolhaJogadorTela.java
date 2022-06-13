@@ -34,7 +34,7 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jComboBoxNomesJogadores = new javax.swing.JComboBox<>();
         unidade1EnterBotao1 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jTextFieldNomeJogador = new javax.swing.JTextField();
         unidade1EnterBotao2 = new javax.swing.JLabel();
         SilhuetaPNG = new javax.swing.JLabel();
         guerraPNG = new javax.swing.JLabel();
@@ -88,17 +88,17 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
         unidade1EnterBotao1.setForeground(new java.awt.Color(255, 255, 255));
         unidade1EnterBotao1.setText("Crie um Jogador");
 
-        jTextField2.setBackground(new java.awt.Color(12, 12, 12));
-        jTextField2.setFont(new java.awt.Font("Montserrat Medium", 0, 24)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(147, 87, 242));
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField2.setAlignmentX(5.0F);
-        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        jTextField2.setMargin(new java.awt.Insets(2, 10, 2, 10));
-        jTextField2.setMaximumSize(new java.awt.Dimension(771, 54));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldNomeJogador.setBackground(new java.awt.Color(12, 12, 12));
+        jTextFieldNomeJogador.setFont(new java.awt.Font("Montserrat Medium", 0, 24)); // NOI18N
+        jTextFieldNomeJogador.setForeground(new java.awt.Color(147, 87, 242));
+        jTextFieldNomeJogador.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextFieldNomeJogador.setAlignmentX(5.0F);
+        jTextFieldNomeJogador.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        jTextFieldNomeJogador.setMargin(new java.awt.Insets(2, 10, 2, 10));
+        jTextFieldNomeJogador.setMaximumSize(new java.awt.Dimension(771, 54));
+        jTextFieldNomeJogador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jTextFieldNomeJogadorActionPerformed(evt);
             }
         });
 
@@ -116,12 +116,27 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
         jButton4.setText("CRIAR");
         jButton4.setBorder(null);
         jButton4.setFocusPainted(false);
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton1.setBackground(new java.awt.Color(85, 51, 141));
         jButton1.setFont(new java.awt.Font("Montserrat ExtraBold", 0, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("JOGAR");
         jButton1.setBorder(null);
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -142,7 +157,7 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
                         .addGap(39, 39, 39)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(unidade1EnterBotao1)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 548, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldNomeJogador, javax.swing.GroupLayout.PREFERRED_SIZE, 548, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(unidade1EnterBotao2)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -162,7 +177,7 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
                         .addComponent(unidade1EnterBotao1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldNomeJogador, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(SilhuetaPNG))
                 .addGap(66, 66, 66)
@@ -239,9 +254,9 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jTextFieldNomeJogadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNomeJogadorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jTextFieldNomeJogadorActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -251,6 +266,20 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
         setVisible(false);
         new MenuPrincipalTela().setVisible(true);
     }//GEN-LAST:event_closeIconPNGActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+       String addValue = jTextFieldNomeJogador.getText();
+       jComboBoxNomesJogadores.addItem(addValue);      
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+       setVisible(false);
+       new MenuPrincipalTela().setVisible(true);
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /** 
      * @param args the command line arguments
@@ -298,7 +327,7 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextFieldNomeJogador;
     private javax.swing.JButton jogarU2Botao1;
     private javax.swing.JLabel unidade1EnterBotao1;
     private javax.swing.JLabel unidade1EnterBotao2;

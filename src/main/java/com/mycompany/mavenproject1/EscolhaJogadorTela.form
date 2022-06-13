@@ -155,7 +155,7 @@
                               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="unidade1EnterBotao1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField2" min="-2" pref="548" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldNomeJogador" min="-2" pref="548" max="-2" attributes="0"/>
                                   <Component id="unidade1EnterBotao2" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -182,7 +182,7 @@
                               <Component id="unidade1EnterBotao1" min="-2" pref="54" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField2" alignment="3" min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldNomeJogador" alignment="3" min="-2" pref="54" max="-2" attributes="0"/>
                                   <Component id="jButton4" alignment="3" min="-2" pref="54" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -242,7 +242,7 @@
                 <Property name="text" type="java.lang.String" value="Crie um Jogador"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
+            <Component class="javax.swing.JTextField" name="jTextFieldNomeJogador">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="c" green="c" red="c" type="rgb"/>
@@ -270,7 +270,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldNomeJogadorActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="unidade1EnterBotao2">
@@ -315,6 +315,10 @@
                 </Property>
                 <Property name="focusPainted" type="boolean" value="false"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton4MouseClicked"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButton1">
               <Properties>
@@ -333,6 +337,7 @@
                 </Property>
               </Properties>
               <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseClicked"/>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
               </Events>
             </Component>
