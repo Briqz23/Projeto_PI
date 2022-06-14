@@ -278,7 +278,7 @@ public class EscolhaJogadorTela extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
        setVisible(false);
-       new MenuPrincipalTela().setVisible(true);
+       new EscolhaUnidadesTela().setVisible(true);
     }//GEN-LAST:event_jButton1MouseClicked
 
     /** 

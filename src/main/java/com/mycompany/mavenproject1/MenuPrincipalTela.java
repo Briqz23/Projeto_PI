@@ -28,7 +28,6 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        numUnidade = new javax.swing.JTextField();
         unidade = new javax.swing.JLabel();
         closeIconPNG = new javax.swing.JButton();
         documentacaoBotao = new javax.swing.JLabel();
@@ -52,26 +51,11 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(948, 698));
         jPanel1.setLayout(null);
 
-        numUnidade.setEditable(false);
-        numUnidade.setBackground(new java.awt.Color(255, 255, 255));
-        numUnidade.setFont(new java.awt.Font("Montserrat", 1, 40)); // NOI18N
-        numUnidade.setForeground(new java.awt.Color(85, 51, 141));
-        numUnidade.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        numUnidade.setBorder(null);
-        numUnidade.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                numUnidadeActionPerformed(evt);
-            }
-        });
-        jPanel1.add(numUnidade);
-        numUnidade.setBounds(880, 20, 50, 70);
-        numUnidade.getAccessibleContext().setAccessibleName("");
-
         unidade.setFont(new java.awt.Font("Montserrat", 1, 40)); // NOI18N
         unidade.setForeground(new java.awt.Color(85, 51, 141));
         unidade.setText("UNIDADE");
         jPanel1.add(unidade);
-        unidade.setBounds(670, 20, 210, 70);
+        unidade.setBounds(700, 20, 210, 70);
 
         closeIconPNG.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\closeIcon.png")); // NOI18N
         closeIconPNG.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -260,8 +244,11 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
     }//GEN-LAST:event_sairBotaoMouseEntered
 
     private void sairBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sairBotaoMouseClicked
-
-        System.exit(0);
+        setVisible(false);
+        new DesejaSairTela().setVisible(true);
+        
+            
+            
     }//GEN-LAST:event_sairBotaoMouseClicked
 
     private void tutorialBotaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tutorialBotaoMouseExited
@@ -319,10 +306,6 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         new CreditosTelaV2().setVisible(true);
     }//GEN-LAST:event_creditosBotaoMouseClicked
 
-    private void numUnidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numUnidadeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_numUnidadeActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -370,7 +353,6 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField numUnidade;
     private javax.swing.JLabel sairBotao;
     private javax.swing.JLabel selecaoJogadorBotao;
     private javax.swing.JLabel selecaoUnidadeBotao;
