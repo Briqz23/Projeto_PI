@@ -4,6 +4,10 @@
  */
 package com.mycompany.mavenproject1;
 import java.awt.Color;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+import java.net.URI;
 
 
 public class MenuPrincipalTela extends javax.swing.JFrame {
@@ -80,6 +84,9 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         documentacaoBotao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         documentacaoBotao.setText("Documentação");
         documentacaoBotao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                documentacaoBotaoMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 documentacaoBotaoMouseEntered(evt);
             }
@@ -313,6 +320,20 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         setVisible(false);
         new Tutorial1Tela().setVisible(true);
     }//GEN-LAST:event_tutorialBotaoMouseClicked
+
+    private void documentacaoBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_documentacaoBotaoMouseClicked
+        try {
+
+        URI uri= new URI("http://www.instanceofjava.com");
+
+        java.awt.Desktop.getDesktop().browse(uri);
+        System.out.println("Web page opened in browser");
+
+        } catch (Exception e) {
+
+        e.printStackTrace();
+  }
+    }//GEN-LAST:event_documentacaoBotaoMouseClicked
 
     /**
      * @param args the command line arguments
