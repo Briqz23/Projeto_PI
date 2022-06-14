@@ -324,10 +324,10 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
     private void documentacaoBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_documentacaoBotaoMouseClicked
         try {
 
-        URI uri= new URI("http://www.instanceofjava.com");
+        URI uri= new URI("https://drive.google.com/drive/folders/1CYBwAzRUUjsoNiDhwBdwoTd3e7OiXERl?usp=sharing");
 
         java.awt.Desktop.getDesktop().browse(uri);
-        System.out.println("Web page opened in browser");
+        System.out.println("Página com resumos aberta no Navegador!");
 
         } catch (Exception e) {
 
