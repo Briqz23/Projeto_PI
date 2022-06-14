@@ -116,7 +116,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Aperte ENTER para come&#xe7;ar"/>
+            <Property name="text" type="java.lang.String" value="Clique para continuar"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">

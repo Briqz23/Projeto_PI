@@ -61,7 +61,7 @@ public class PressEnterTela extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Montserrat", 1, 32)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Aperte ENTER para começar");
+        jLabel3.setText("Clique para continuar");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive - Colégio Santa Cruz\\Documentos\\NetBeansProjects\\ProjetoIntegradorS1\\src\\main\\java\\com\\mycompany\\mavenproject1\\Imagens\\LOGO_Resized.png")); // NOI18N

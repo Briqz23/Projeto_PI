@@ -70,7 +70,7 @@ public class HistoriaTela2 extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Aperte ENTER para continuar");
+        jLabel3.setText("Clique para continuar");
 
         jLabel1.setFont(new java.awt.Font("Montserrat", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));

@@ -169,6 +169,9 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         tutorialBotao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         tutorialBotao.setText("Tutorial");
         tutorialBotao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tutorialBotaoMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 tutorialBotaoMouseEntered(evt);
             }
@@ -305,6 +308,11 @@ public class MenuPrincipalTela extends javax.swing.JFrame {
         setVisible(false);
         new CreditosTelaV2().setVisible(true);
     }//GEN-LAST:event_creditosBotaoMouseClicked
+
+    private void tutorialBotaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tutorialBotaoMouseClicked
+        setVisible(false);
+        new Tutorial1Tela().setVisible(true);
+    }//GEN-LAST:event_tutorialBotaoMouseClicked
 
     /**
      * @param args the command line arguments
